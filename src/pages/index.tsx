@@ -1,5 +1,9 @@
 import type { NextPage } from 'next'
-import { SectionSeller } from '../component/SectionSeller'
+import { Provider } from 'react-redux'
+import { Congratulation } from '../component/congratulation'
+
+import store from '../store'
+
 
 
 
@@ -7,7 +11,10 @@ import { SectionSeller } from '../component/SectionSeller'
 
 const Home: NextPage = () => {
   return (
-    <SectionSeller/>
+    
+    <Provider store={store}>
+    <Congratulation/>
+    </Provider>
   )
 }
 
