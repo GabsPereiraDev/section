@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
-import { SectionSeller } from '../component/SectionSeller'
+import { Dashboard } from '../component/UserProfile/Dashboard'
+import { Profile } from '../component/UserProfile/Profile'
+
 
 
 
@@ -7,7 +9,9 @@ import { SectionSeller } from '../component/SectionSeller'
 
 const Home: NextPage = () => {
   return (
-    <SectionSeller/>
+    <Dashboard>
+      <Profile />
+    </Dashboard>
   )
 }
 
